@@ -1,0 +1,56 @@
+# ===================================================================
+# 3. USAGE INSTRUCTIONS
+# ===================================================================
+
+instructions = """
+🚀 DEPLOYMENT INSTRUCTIONS:
+
+1. Download the models folder from Google Drive to your local machine
+2. Copy the fastapi_with_models.py file to your project directory
+3. Install required packages:
+   pip install fastapi uvicorn joblib scikit-learn xgboost lightgbm pandas numpy
+
+4. Run the API:
+   python fastapi_with_models.py
+
+5. Test the API at http://localhost:8000/docs
+
+📁 FOLDER STRUCTURE:
+your_project/
+├── fastapi_with_models.py
+├── models/
+│   ├── xgb_model.joblib
+│   ├── lgb_model.joblib  
+│   ├── ensemble_model.joblib
+│   ├── encoders.joblib
+│   ├── selected_features.json
+│   └── model_metadata.json
+
+🧪 EXAMPLE REQUEST:
+{
+  "age": 35,
+  "job": "management",
+  "marital": "married",
+  "education": "tertiary",
+  "default": "no",
+  "balance": 1500.5,
+  "housing": "yes",
+  "loan": "no",
+  "contact": "cellular",
+  "duration": 180,
+  "campaign": 2,
+  "pdays": -1,
+  "previous": 0,
+  "poutcome": "unknown",
+  "month": "may"
+}
+"""
+
+print(instructions)
+
+# Save instructions
+instructions_path = os.path.join(save_path, "deployment_instructions.txt")
+with open(instructions_path, 'w') as f:
+    f.write(instructions)
+
+print(f"📋 Instructions saved to: {instructions_path}")

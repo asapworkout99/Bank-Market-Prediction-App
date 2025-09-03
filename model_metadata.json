@@ -1,0 +1,18 @@
+{
+  "model_scores": {
+    "xgb": 0.9668769054276256,
+    "lgb": 0.9670195952268529
+  },
+  "feature_count": 39,
+  "training_date": "2025-08-28T01:29:41.591237",
+  "model_version": "2.0.0",
+  "available_models": [
+    "xgb",
+    "lgb"
+  ],
+  "best_model": "lgb",
+  "ensemble_weights": [
+    0.9668769054276256,
+    0.9670195952268529
+  ]
+}
